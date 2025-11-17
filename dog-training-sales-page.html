@@ -1,0 +1,751 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+body { font-family: Arial; margin:20px; line-height:1.6; }
+section { border: 3px solid #000; margin:40px 0; padding:20px; background:#f5f5f5; }
+.section-inner { border:2px dashed #333; padding:20px; background:#fff; }
+.row { display:flex; gap:20px; margin:20px 0; }
+.col-50 { width:50%; border:1px solid #999; padding:15px; }
+.col-33 { width:33%; border:1px solid #999; padding:15px; }
+.col-20 { width:20%; border:1px solid #999; padding:15px; }
+.card { border:2px solid #666; padding:20px; margin:20px 0; background:#fafafa; }
+.image-placeholder { border:3px dashed #bbb; padding:40px; text-align:center; background:#eee; margin:20px 0; }
+.icon-placeholder { display:inline-block; border:2px dashed #999; padding:5px 10px; margin-right:10px; background:#f0f0f0; font-size:0.8em; }
+.cta-button { background:#0073e6; color:#fff; padding:15px 25px; display:inline-block; margin:15px auto; font-weight:bold; text-align:center; }
+.timeline-connector { height:3px; background:#333; margin:20px 0; position:relative; }
+.timeline-connector::after { content:"→"; position:absolute; right:-10px; top:-12px; font-size:24px; }
+.step-number { display:inline-block; width:40px; height:40px; border-radius:50%; background:#0073e6; color:#fff; text-align:center; line-height:40px; font-weight:bold; margin-right:15px; }
+.step-connector { width:3px; background:#0073e6; height:30px; margin-left:18px; }
+.accordion-header { background:#f0f0f0; padding:15px; cursor:pointer; display:flex; justify-content:space-between; align-items:center; border:1px solid #999; margin-top:10px; }
+.accordion-icon { font-size:20px; font-weight:bold; }
+.accordion-content { padding:15px; border:1px solid #999; border-top:none; background:#fff; }
+.masonry { column-count:2; column-gap:20px; }
+.masonry .testimonial-card { break-inside:avoid; border:2px solid #666; padding:15px; margin-bottom:20px; background:#fafafa; }
+.centered { text-align:center; }
+.urgency-badge { display:inline-block; background:#ff6600; color:#fff; padding:10px 20px; font-weight:bold; margin:20px auto; }
+
+@media(max-width:800px){
+  .row { flex-direction:column; }
+  .col-50, .col-33, .col-20 { width:100%; }
+  .masonry { column-count:1; }
+  .section-hero .row { flex-direction:column-reverse; }
+  .section-benefits .row:nth-of-type(1) { flex-direction:column-reverse; }
+  .section-benefits .row:nth-of-type(2) { flex-direction:column; }
+  .section-benefits .row:nth-of-type(3) { flex-direction:column-reverse; }
+  .section-mechanism .row { flex-direction:column-reverse; }
+  .timeline-row { flex-direction:column; }
+}
+</style>
+</head>
+<body>
+
+<section class="section-hero">
+  <div class="section-inner">
+    <div class="row">
+      <div class="col-50">
+        <h1>The Calm Dog System to End Accidents, Barking, and Pulling for 45+ Owners</h1>
+        <p>Inside the Smart Dog Accelerator Program. A breed-, age-, and personality-tailored training course.</p>
+        <h2>A day-by-day plan tailored to your dog's breed, age, and personality. Just 10–15 minute sessions give you visible calm-at-home wins in about 6 days. Inside the Smart Dog Accelerator Program (Dog Lovers Training Course).</h2>
+        <p><strong>For dog owners 45+ who are exhausted by accidents, barking, and painful leash pulling.</strong></p>
+        <p>If you're wiping up "one more accident" or bracing every walk, don't miss this…</p>
+        <p>First calm-at-home wins in about 6 days with 10–15 minute sessions.</p>
+        <ul>
+          <li>See fewer accidents and a cleaner-smelling home in about 6 days.</li>
+          <li>Calm the barking at windows and guests so you can finally relax and have people over.</li>
+          <li>Make walks easier on your joints with a simple, step-by-step plan to stop leash pulling.</li>
+        </ul>
+        <div class="cta-button">ENROLL IN THE SMART DOG ACCELERATOR PROGRAM FOR $67</div>
+        <p>Trusted by 200,000+ dog owners • One-time $67 for the Smart Dog Accelerator Program (Dog Lovers Training Course) • 30-day free Elite Dog Owners Club trial • 120-day money-back guarantee.</p>
+      </div>
+      <div class="col-50">
+        <div class="image-placeholder">Hero Image: Happy 45+ owner with calm, well-behaved dog</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="section-pas">
+  <div class="section-inner">
+    <h2>Why so many 45+ dog owners feel stuck and embarrassed at home…</h2>
+    <div class="row">
+      <div class="col-33">
+        <div class="card">
+          <h3>THE PROBLEM</h3>
+          <p>You didn't get a dog to spend your days cleaning floors, shushing barking, and bracing every time you clip on the leash.</p>
+          <p>Yet here you are.</p>
+          <ul>
+            <li><span class="icon-placeholder">🏠</span>Constant accidents and a house that smells no matter how much you clean.</li>
+            <li><span class="icon-placeholder">🔊</span>Barking at every noise, guest, or person passing the window.</li>
+            <li><span class="icon-placeholder">🦴</span>Leash pulling that hurts your hands, wrists, shoulders, and knees.</li>
+            <li><span class="icon-placeholder">⚠️</span>Nipping, over-arousal, and jumping that make you nervous around grandkids and guests.</li>
+            <li><span class="icon-placeholder">😵</span>Overwhelmed by YouTube trainers "all saying different things" with no clear plan.</li>
+          </ul>
+          <p>You've tried free videos. You've read old advice. Maybe you even hired a trainer who got results for a week, then everything went back to normal.</p>
+          <p>And deep down, you feel like you must be failing when the house smells and your dog is unruly.</p>
+        </div>
+      </div>
+      <div class="col-33">
+        <div class="card">
+          <h3>THE AGITATION</h3>
+          <p>The embarrassment is real.</p>
+          <ul>
+            <li><span class="icon-placeholder">🚫</span>You avoid inviting people over and even walk late at night to dodge other dogs and neighbors.</li>
+            <li><span class="icon-placeholder">😰</span>You feel judged and embarrassed when guests see or hear your dog's behavior.</li>
+            <li><span class="icon-placeholder">😔</span>You've snapped or yelled at your dog and then felt guilty and ashamed afterward.</li>
+            <li><span class="icon-placeholder">💔</span>You secretly worry you'll become "the kind of person" who has to give a dog away because of behavior issues, despite loving them.</li>
+            <li><span class="icon-placeholder">😫</span>At your age, the pulling and chaos are physically and emotionally draining.</li>
+          </ul>
+          <p>The quiet worry that you "don't have the energy" to be a good trainer. The nagging feeling that you've "trained wrong" before and might mess it up again.</p>
+          <p>And structurally, you're drowning. Scattered tips from YouTube, friends, and different trainers who all contradict each other. You search for potty hacks, barking fixes, leash tricks like they're separate problems. You stay stuck because there's no single system tying it together.</p>
+        </div>
+      </div>
+      <div class="col-33">
+        <div class="card">
+          <h3>THE SOLUTION</h3>
+          <p>Here's the truth.</p>
+          <p>The real problem isn't your dog. It's conflicting tips and no single, structured plan built for your stage of life.</p>
+          <p><span class="icon-placeholder">📋</span>The Smart Dog Accelerator Program uses a Breed+Age+Personality Blueprint and 196 short lessons. Each lesson is 10–15 minutes. You follow one clear roadmap instead of mixing methods.</p>
+          <p><span class="icon-placeholder">🎯</span>You get focused routines that target accidents, barking, and pulling first. Early calm-at-home wins in about 6 days. Plus a clear path for tougher cases.</p>
+          <p>Most of those "separate" issues actually come from the same roots. Over-arousal, weak impulse control, and mixed signals from humans who were never given a real plan.</p>
+          <p><span class="icon-placeholder">✅</span>When you fix those roots with one structured system, multiple problems clear up at once.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="section-benefits">
+  <div class="section-inner">
+    <h2>What you'll notice first as your dog settles…</h2>
+
+    <div class="row">
+      <div class="col-50">
+        <h3>A. EXTERNAL / PRACTICAL BENEFITS</h3>
+        <ul>
+          <li>Permanently housebreak your puppy or newly adopted dog and stop daily floor-cleaning.</li>
+          <li>End most excessive barking at guests, mail carriers, and people passing the window.</li>
+          <li>Get rid of painful leash pulling so walks stop feeling like a battle.</li>
+          <li>Fix aggression issues toward family, visitors, and other pets with a structured plan.</li>
+          <li>Properly socialize your dog and reduce chewing, jumping, and other impulsive behaviors.</li>
+        </ul>
+        <p>[+ More practical benefits]</p>
+        <ul>
+          <li>Save money by training at home instead of paying for repeated in-person sessions.</li>
+          <li>Keep your blinds open during the day because passing people won't trigger frantic barking.</li>
+          <li>Take your dog on walks or to meet people without bracing for aggression or pulling.</li>
+          <li>Personalized, breed-specific training that gets faster results because it matches your dog's instincts.</li>
+        </ul>
+      </div>
+      <div class="col-50">
+        <div class="image-placeholder">Lifestyle Image: Clean home, peaceful walks</div>
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="col-50">
+        <div class="image-placeholder">Lifestyle Image: Relaxed owner with calm dog</div>
+      </div>
+      <div class="col-50">
+        <h3>B. EMOTIONAL BENEFITS</h3>
+        <ul>
+          <li>Feel calm and relieved that you finally have a plan that's actually working.</li>
+          <li>Enjoy a peaceful home instead of constant tension about what your dog might do.</li>
+          <li>Drop the shame and guilt from "losing it" with your dog. Now you have a clear script.</li>
+          <li>Feel supported instead of alone with 15-minute trainer calls and regular vet Q&A.</li>
+        </ul>
+        <p>[+ More emotional benefits]</p>
+        <ul>
+          <li>Stop feeling overwhelmed by scattered advice and finally know what step comes next.</li>
+          <li>Feel confident inviting people over instead of avoiding guests and grandkids.</li>
+          <li>End the worry that you'll have to give your dog away because of behavior problems.</li>
+          <li>Feel proud of yourself for training your dog at home instead of relying on someone else.</li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="col-50">
+        <h3>C. IDENTITY / WHO-YOU-BECOME BENEFITS</h3>
+        <ul>
+          <li>Become the calm, capable dog guardian you always wanted to be.</li>
+          <li>Build a strong bond because you trained your dog yourself and truly understand them.</li>
+          <li>Feel proud inviting guests and grandkids, knowing your dog is safe and well-mannered.</li>
+          <li>Fulfill your "forever home" promise, especially for rescue dogs who've already been through enough.</li>
+        </ul>
+        <p>[+ More identity benefits]</p>
+        <ul>
+          <li>Know you're the kind of person who keeps their commitment instead of giving up.</li>
+          <li>Feel like a real dog owner instead of someone who's constantly struggling and failing.</li>
+          <li>Gain the confidence to handle any future behavior issue because you understand how dogs think.</li>
+        </ul>
+      </div>
+      <div class="col-50">
+        <div class="image-placeholder">Aspirational Image: Proud owner with well-behaved dog</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="section-futurecasting">
+  <div class="section-inner">
+    <h2>Fast-forward a few weeks with a calmer dog…</h2>
+    <div class="row timeline-row">
+      <div class="col-20">
+        <div class="image-placeholder">Morning routine</div>
+        <h3>MORNINGS</h3>
+        <p>Clean floors, no frantic scrubbing. You sip coffee instead of hunting for accidents.</p>
+      </div>
+      <div class="col-20">
+        <div class="image-placeholder">Guests visiting</div>
+        <h3>GUESTS & GRANDKIDS</h3>
+        <p>Doorbell rings, dog goes to their spot. Grandkids play while your dog lies calmly nearby.</p>
+      </div>
+      <div class="col-20">
+        <div class="image-placeholder">Peaceful walk</div>
+        <h3>WALKS</h3>
+        <p>You clip the leash without bracing your joints. "Freeze-and-praise" turns battles into gentle strolls.</p>
+      </div>
+      <div class="col-20">
+        <div class="image-placeholder">Calm home</div>
+        <h3>AROUND THE HOUSE</h3>
+        <p>Blinds stay open. Your dog looks at people outside and then calmly back to you.</p>
+      </div>
+      <div class="col-20">
+        <div class="image-placeholder">Confident owner</div>
+        <h3>HOW YOU SEE YOURSELF</h3>
+        <p>You realize you've become the calm, capable guardian you wanted to be.</p>
+      </div>
+    </div>
+    <div class="timeline-connector"></div>
+  </div>
+</section>
+
+<section class="section-instructors">
+  <div class="section-inner">
+    <h2>Learn from trainers trusted by thousands over 20+ years…</h2>
+    <div class="row">
+      <div class="col-50">
+        <div class="card">
+          <div class="image-placeholder">Ty Brown Headshot</div>
+          <h3>TY BROWN – CORE OBEDIENCE & BEHAVIOR TRAINER</h3>
+          <ul>
+            <li>Featured on radio and TV shows like Dr. Marty Becker's "Top Vets Talk Pets."</li>
+            <li>Has trained dogs for NBA, NFL, and pop music superstars.</li>
+            <li>Helps you master timing, body language, and reward placement so your dog listens at home.</li>
+          </ul>
+        </div>
+      </div>
+      <div class="col-50">
+        <div class="card">
+          <div class="image-placeholder">Val Heart Headshot</div>
+          <h3>VAL HEART – ANIMAL COMMUNICATION & UNDERSTANDING</h3>
+          <ul>
+            <li>Internationally recognized author on expert animal communication and master healing.</li>
+            <li>Featured on multiple TV and radio shows.</li>
+            <li>Adds depth to understanding your dog's behavior and emotional state.</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <div class="card">
+      <h3>COMBINED EXPERTISE</h3>
+      <p>Over 200,000 dog owners trained across 20+ years.</p>
+      <p>Both instructors bring decades of real-world experience with breeds, temperaments, and rescue cases.</p>
+      <p>You're not learning from one person's opinion. You're learning from a proven system built on thousands of successful transformations.</p>
+    </div>
+  </div>
+</section>
+
+<section class="section-social-proof">
+  <div class="section-inner">
+    <h2>What other 45+ dog owners are saying…</h2>
+
+    <h3>POTTY TRAINING & HOUSEBREAKING WINS</h3>
+    <div class="masonry">
+      <div class="testimonial-card">
+        <p>"I adopted a 2-year-old rescue and was told she was 'impossible to housebreak.' Following the substrate preference method, we had our first accident-free day on Day 5. Now at 3 weeks in, I haven't cleaned a floor in over a week. I'm 58 and was ready to give up. This gave me hope."</p>
+        <p><strong>- Carol M., rescue owner, Tennessee</strong></p>
+      </div>
+      <div class="testimonial-card">
+        <p>"My 4-month-old puppy was having 3-4 accidents a day. The day-by-day plan made it so clear what to expect. By Day 6 he was signaling at the door. I finally feel like I know what I'm doing."</p>
+        <p><strong>- Linda R., first-time puppy owner, Oregon</strong></p>
+      </div>
+    </div>
+
+    <h3>LEASH PULLING & WALKS</h3>
+    <div class="masonry">
+      <div class="testimonial-card">
+        <p>"The pulling was hurting my shoulder and wrist. I'm 62 and have arthritis. The freeze-and-praise method worked within 2 walks. Now I actually enjoy our morning routine instead of dreading it."</p>
+        <p><strong>- Tom S., senior dog owner, Florida</strong></p>
+      </div>
+      <div class="testimonial-card">
+        <p>"I was being dragged down the street by my 70-lb rescue. The step-by-step leash training gave me control back. Walks are finally relaxing."</p>
+        <p><strong>- Janet P., rescue owner, Colorado</strong></p>
+      </div>
+    </div>
+
+    <h3>BARKING AT GUESTS & WINDOWS</h3>
+    <div class="masonry">
+      <div class="testimonial-card">
+        <p>"My dog barked at every car, every person, every squirrel. We kept the blinds down all day. After following the Silent Tracker method, the barking dropped by 80% in the first week. I can finally have the windows open."</p>
+        <p><strong>- Margaret K., empty nester, Arizona</strong></p>
+      </div>
+      <div class="testimonial-card">
+        <p>"I was embarrassed to have grandkids over because of the barking and jumping. The impulse control work changed everything. Now the kids visit twice a week and my dog just lies calmly nearby."</p>
+        <p><strong>- Robert H., grandfather, Pennsylvania</strong></p>
+      </div>
+    </div>
+
+    <h3>AGGRESSION & RESCUE CASES</h3>
+    <div class="masonry">
+      <div class="testimonial-card">
+        <p>"My rescue had fear-based aggression toward other dogs. The program set realistic expectations and gave me a clear plan. Three months in, we can pass other dogs on walks without a meltdown. It's not perfect yet, but I finally see progress."</p>
+        <p><strong>- Patricia L., rescue owner, Michigan</strong></p>
+      </div>
+      <div class="testimonial-card">
+        <p>"I thought my dog was just 'mean.' Turns out it was over-arousal and confusion. The Breed+Age+Personality Blueprint showed me what my dog actually needed. Our bond is completely different now."</p>
+        <p><strong>- Susan T., mixed-breed owner, Ohio</strong></p>
+      </div>
+    </div>
+
+    <h3>OLDER OWNERS & FIXED INCOME</h3>
+    <div class="masonry">
+      <div class="testimonial-card">
+        <p>"I'm 68, on a pension, and I was terrified of wasting money on another training program that wouldn't work. The 120-day guarantee gave me peace of mind. And the 10-15 minute sessions were perfect for my energy level. I'm so glad I tried it."</p>
+        <p><strong>- Dorothy W., retiree, Nevada</strong></p>
+      </div>
+      <div class="testimonial-card">
+        <p>"At my age I didn't think I could train a dog myself. But the short daily lessons and the trainer calls during my trial made it doable. I feel capable now instead of overwhelmed."</p>
+        <p><strong>- George M., 71, California</strong></p>
+      </div>
+    </div>
+
+    <div class="image-placeholder">Video Testimonials Placeholder</div>
+  </div>
+</section>
+
+<section class="section-how-it-works">
+  <div class="section-inner">
+    <h2>Your clear, step-by-step path to a calmer dog…</h2>
+
+    <div class="row">
+      <div class="col-50">
+        <div>
+          <span class="step-number">1</span>
+          <strong>STEP 1: START WITH YOUR DOG'S BREED+AGE+PERSONALITY BLUEPRINT</strong>
+        </div>
+        <p>When you enroll, you'll answer a few quick questions about your dog's breed type, age, and temperament.</p>
+        <p>The program adjusts your training path so a shy rescue, an excitable puppy, and a stubborn adult each get different pacing and expectations.</p>
+        <p>You're not following a one-size-fits-all plan. You're following a roadmap built for your dog.</p>
+      </div>
+      <div class="col-50">
+        <div class="image-placeholder">Blueprint questionnaire screenshot</div>
+      </div>
+    </div>
+
+    <div class="step-connector"></div>
+
+    <div class="row">
+      <div class="col-50">
+        <div>
+          <span class="step-number">2</span>
+          <strong>STEP 2: FOLLOW 10–15 MINUTE DAILY LESSONS IN ORDER</strong>
+        </div>
+        <p>Each lesson is a short video with a clear checklist.</p>
+        <p>Log in, watch today's lesson, follow the steps, and you're done.</p>
+        <p>No guessing. No mixing methods. Just one clear action per day.</p>
+        <p>The 196 lessons are organized into a day-by-day roadmap so you always know what comes next.</p>
+      </div>
+      <div class="col-50">
+        <div class="image-placeholder">Daily lesson interface screenshot</div>
+      </div>
+    </div>
+
+    <div class="step-connector"></div>
+
+    <div class="row">
+      <div class="col-50">
+        <div>
+          <span class="step-number">3</span>
+          <strong>STEP 3: FOCUS ON EARLY WINS IN THE FIRST 6 DAYS</strong>
+        </div>
+        <p>The program starts with focused, behavior-specific routines that target accidents, barking, and pulling first.</p>
+        <p>You'll see visible progress in about 6 days on the biggest stressors while getting realistic guidance on what takes longer.</p>
+        <p>For rescues or tougher aggression cases, you'll know exactly what to expect and how to keep improving.</p>
+      </div>
+      <div class="col-50">
+        <div class="image-placeholder">Progress tracking visual</div>
+      </div>
+    </div>
+
+    <div class="step-connector"></div>
+
+    <div class="row">
+      <div class="col-50">
+        <div>
+          <span class="step-number">4</span>
+          <strong>STEP 4: GET HELP WHEN YOU'RE STUCK</strong>
+        </div>
+        <p>Your purchase automatically includes a 30-day free trial of the Elite Dog Owners Club.</p>
+        <p>Book one-on-one 15-minute calls with trainers when you need feedback on your specific situation.</p>
+        <p>Ask health and behavior questions during regular vet Q&A instead of piecing advice from strangers online.</p>
+        <p>After the trial, the Club continues at $67/month unless you cancel. No surprises.</p>
+      </div>
+      <div class="col-50">
+        <div class="image-placeholder">Support system visual</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="section-curriculum">
+  <div class="section-inner">
+    <h2>196 lessons organized into a clear roadmap…</h2>
+
+    <div class="accordion-header">
+      <h3>MODULE 1: Build Trust & Communication From Day One</h3>
+      <span class="accordion-icon">+</span>
+    </div>
+    <div class="accordion-content">
+      <ul>
+        <li>Understand your dog's breed instincts</li>
+        <li>Set up your home for success</li>
+        <li>Create structure with basic commands</li>
+      </ul>
+    </div>
+
+    <div class="accordion-header">
+      <h3>MODULE 2: End Accidents & Complete Housebreaking</h3>
+      <span class="accordion-icon">+</span>
+    </div>
+    <div class="accordion-content">
+      <ul>
+        <li>Use substrate preference and den-keeping instinct</li>
+        <li>Follow day-by-day process with realistic expectations</li>
+        <li>Handle setbacks without confusion</li>
+      </ul>
+    </div>
+
+    <div class="accordion-header">
+      <h3>MODULE 3: Teach Your Dog to Settle & Self-Soothe</h3>
+      <span class="accordion-icon">+</span>
+    </div>
+    <div class="accordion-content">
+      <ul>
+        <li>Reduce over-arousal at home and during greetings</li>
+        <li>Handle extinction bursts (when barking spikes before it stops)</li>
+      </ul>
+    </div>
+
+    <div class="accordion-header">
+      <h3>MODULE 4: Stop Barking at Windows, Guests & Doors</h3>
+      <span class="accordion-icon">+</span>
+    </div>
+    <div class="accordion-content">
+      <ul>
+        <li>Use the Silent Tracker Method</li>
+        <li>Reduce reactivity without punishment</li>
+      </ul>
+    </div>
+
+    <div class="accordion-header">
+      <h3>MODULE 5: End Painful Leash Pulling for Good</h3>
+      <span class="accordion-icon">+</span>
+    </div>
+    <div class="accordion-content">
+      <ul>
+        <li>Master the freeze-and-praise method</li>
+        <li>Build loose-leash walking step by step</li>
+        <li>Safe walking strategies for 45+ owners</li>
+      </ul>
+    </div>
+
+    <div class="accordion-header">
+      <h3>MODULE 6: Calm Jumping, Nipping & Over-Excitement</h3>
+      <span class="accordion-icon">+</span>
+    </div>
+    <div class="accordion-content">
+      <ul>
+        <li>Teach appropriate greetings with grandkids and guests</li>
+        <li>Create calm rituals around arrivals</li>
+      </ul>
+    </div>
+
+    <div class="accordion-header">
+      <h3>MODULE 7: Prevent Aggression & Socialize Safely</h3>
+      <span class="accordion-icon">+</span>
+    </div>
+    <div class="accordion-content">
+      <ul>
+        <li>Reduce fear-based reactivity toward people and dogs</li>
+        <li>Build confidence in timid or fearful dogs</li>
+      </ul>
+    </div>
+
+    <div class="accordion-header">
+      <h3>MODULE 8: Maintain Results & Handle Setbacks</h3>
+      <span class="accordion-icon">+</span>
+    </div>
+    <div class="accordion-content">
+      <ul>
+        <li>Off-leash recall and emergency commands</li>
+        <li>Keep progress long-term</li>
+      </ul>
+    </div>
+
+    <div class="accordion-header">
+      <h3>BONUS MATERIALS</h3>
+      <span class="accordion-icon">+</span>
+    </div>
+    <div class="accordion-content">
+      <ul>
+        <li>Checklists for every lesson</li>
+        <li>Visual guides for timing and body language</li>
+        <li>Audio versions for hands-free review</li>
+      </ul>
+    </div>
+  </div>
+</section>
+
+<section class="section-mechanism">
+  <div class="section-inner">
+    <h2>The science behind your dog's behavior (and how to fix it)…</h2>
+    <div class="row">
+      <div class="col-50">
+        <h3>UNIQUE MECHANISM: THE BREED+AGE+PERSONALITY BLUEPRINT</h3>
+        <p>Most dog training treats every dog the same.</p>
+        <p>But a shy rescue, an excitable puppy, and a stubborn adult don't need the same approach.</p>
+        <p>Your dog's behavior comes from three things working together.</p>
+        <p><strong>Breed instincts.</strong> A herding breed reacts to movement differently than a guardian breed. A retriever's impulse control develops on a different timeline than a terrier's.</p>
+        <p><strong>Age and life stage.</strong> Puppies, adolescents, and mature dogs have different hormone levels, energy patterns, and learning speeds.</p>
+        <p><strong>Personality and past.</strong> A confident dog needs different handling than a timid one. A rescue with a difficult past needs more time and different expectations than a well-socialized puppy.</p>
+        <p>The Smart Dog Accelerator adjusts your training path by all three factors. You get a clear roadmap that matches your dog's reality instead of fighting against their instincts.</p>
+
+        <h3>CORE INSIGHT: MOST PROBLEMS SHARE THE SAME ROOTS</h3>
+        <p>Accidents, barking, jumping, pulling, nipping. They look like separate problems.</p>
+        <p>But they almost always come from the same core causes.</p>
+        <p><strong>Over-arousal.</strong> Your dog's body is flooded with excitement or stress, shutting down their ability to think clearly.</p>
+        <p><strong>Weak impulse control.</strong> They haven't learned to pause, wait, or settle when their body tells them to act.</p>
+        <p><strong>Mixed signals.</strong> You've been given conflicting advice and your dog stays confused about what you actually want.</p>
+        <p>When you fix those roots with one structured system, multiple problems clear up at once.</p>
+
+        <h3>HOW THE PROGRAM TEACHES YOU (NOT JUST YOUR DOG)</h3>
+        <p>In-person trainers often teach your dog to respond to them.</p>
+        <p>This program teaches your dog to respond to you in everyday life.</p>
+        <p>You learn exactly when to reward or interrupt, how to use your body language, and how to place rewards so your dog understands what you want.</p>
+        <p>It's owner-first training. Your dog listens to you in real life, not just to a trainer in a session.</p>
+      </div>
+      <div class="col-50">
+        <div class="image-placeholder">Breed+Age+Personality Blueprint Diagram</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="section-offer-stack">
+  <div class="section-inner">
+    <h2>Everything you get when you enroll today…</h2>
+
+    <div class="card">
+      <h3>CORE PROGRAM: SMART DOG ACCELERATOR PROGRAM (DOG LOVERS TRAINING COURSE)</h3>
+      <p><strong>Value: $197</strong></p>
+      <div class="image-placeholder">Course Mockup Image</div>
+      <p>196 step-by-step video lessons organized into 8 modules.</p>
+      <p>Each lesson is 10–15 minutes with a clear checklist.</p>
+      <p>Breed+Age+Personality Blueprint tailors your path based on your dog's instincts, life stage, and temperament.</p>
+      <p>Day-by-day roadmap with realistic expectations for early wins and tougher cases.</p>
+      <p>Online course with videos, audio, step-by-step guides, and infographics.</p>
+      <p>Instant access to all lessons after purchase.</p>
+      <p>Keep access to all 196 lessons.</p>
+    </div>
+
+    <div class="card">
+      <h3>BONUS #1: ELITE DOG OWNERS CLUB (30-DAY FREE TRIAL)</h3>
+      <p><strong>Value: $77/month (first month free)</strong></p>
+      <p>One-on-one 15-minute calls with trainers when you're stuck or need feedback.</p>
+      <p>Regular vet Q&A where you can ask health and behavior questions together.</p>
+      <p>After your 30-day free trial, membership continues at $67/month (discounted from $77) unless you cancel.</p>
+      <p>Price locked at $67/month for these customers as long as you remain a member.</p>
+    </div>
+
+    <div class="card">
+      <h3>BONUS #2: DOG HEALTH BOOK</h3>
+      <p><strong>Value: $49</strong></p>
+      <p>Comprehensive guide to common health issues, preventive care, and when to see a vet.</p>
+      <p>Helps you understand the connection between behavior and health.</p>
+    </div>
+
+    <div class="card">
+      <h3>TOTAL STATED VALUE</h3>
+      <p>Course $197 + Club $77 + Health Book $49 = $323 value.</p>
+    </div>
+
+    <div class="card">
+      <h3>YOUR PRICE TODAY</h3>
+      <p><strong>One-time payment of $67 for the Smart Dog Accelerator Program (Dog Lovers Training Course).</strong></p>
+      <p>Includes automatic 30-day free trial of the Elite Dog Owners Club, then $67/month after the trial unless cancelled.</p>
+      <p>More than 75% discount. Save $256 instantly.</p>
+      <div class="cta-button">YES, I'M READY FOR A CALMER DOG</div>
+    </div>
+
+    <div class="card">
+      <h3>OUR 100% NO-RISK PROMISE: 120 DAY MONEY BACK GUARANTEE</h3>
+      <p>Try the Smart Dog Accelerator Program for 120 days in your real home with your real dog.</p>
+      <p>If you're not happy or don't see progress, contact support and request a full refund.</p>
+      <p>Your entire course payment is refunded. Especially reassuring if you're on a fixed income.</p>
+      <p>Take the full 120 days to decide if this works for you and your dog.</p>
+    </div>
+  </div>
+</section>
+
+<section class="section-faq">
+  <div class="section-inner">
+    <h2>Questions dog owners 45+ ask before joining…</h2>
+
+    <h3>GROUP 1: WILL THIS WORK FOR MY DOG? (FIT & RESULTS)</h3>
+    <div class="row">
+      <div class="col-50">
+        <div class="card">
+          <p><strong>Q: Will this program work for mixed-breed dogs?</strong></p>
+          <p>Yes. The Breed+Age+Personality Blueprint adjusts for breed type, not just purebreds. If your dog is a mix, you'll answer questions about their dominant breed traits and energy level. The program adapts your path based on those answers.</p>
+        </div>
+        <div class="card">
+          <p><strong>Q: My dog is 4 years old. Will your course be effective for him?</strong></p>
+          <p>Yes. The program works for puppies, adolescents, and adult dogs. Age is one of the three factors in your Blueprint. A 4-year-old dog learns differently than a puppy, so your training path adjusts for that. Adult dogs can absolutely learn new behaviors with the right approach.</p>
+        </div>
+        <div class="card">
+          <p><strong>Q: Does your program work for rescue dogs with a difficult past?</strong></p>
+          <p>Yes. The Breed+Age+Personality Blueprint includes adjustments for timid, fearful, or traumatized dogs. You'll get realistic expectations for what takes longer and clear guidance on building trust and confidence. Many rescue owners use this program specifically because it addresses both behavior and emotional state.</p>
+        </div>
+      </div>
+      <div class="col-50">
+        <div class="card">
+          <p><strong>Q: Online training can't be as effective as someone coming to my house, right?</strong></p>
+          <p>In-person trainers often teach your dog to respond to them. This program is designed to teach your dog to respond to you in everyday life. You get step-by-step videos showing exactly what to do, plus 15-minute trainer calls during your Elite Dog Owners Club trial when you need feedback. You get professional guidance without scheduling or travel.</p>
+        </div>
+        <div class="card">
+          <p><strong>Q: How soon can I expect to see changes?</strong></p>
+          <p>You'll focus on behavior-specific routines that deliver early wins in about 6 days on core issues like accidents, barking, and pulling. Complex cases like aggression or deep-seated fear may take longer, and the program sets realistic expectations for those. You'll always know what to expect next.</p>
+        </div>
+      </div>
+    </div>
+
+    <h3>GROUP 2: HOW THE TRAINING WORKS (METHODOLOGY & ETHICS)</h3>
+    <div class="row">
+      <div class="col-50">
+        <div class="card">
+          <p><strong>Q: How does this program differ from free videos and other courses?</strong></p>
+          <p>Free information takes hours to sort through and leaves you guessing which advice to follow. This program gives you one complete system tailored to your dog's breed, age, and personality. You get 196 lessons in order with clear timing and body-language coaching. Plus you have access to trainers and a vet during your Elite Dog Owners Club trial. With a 120-day guarantee, you're getting a clear path built for results.</p>
+        </div>
+        <div class="card">
+          <p><strong>Q: My dog is not food motivated. Will your training still be effective?</strong></p>
+          <p>Yes. The program teaches multiple reward types beyond food. Praise, play, access to what your dog wants. You'll learn how to find what motivates your specific dog and use it effectively. Food is helpful but not required.</p>
+        </div>
+        <div class="card">
+          <p><strong>Q: I don't want to force my dog to act my way. Is your method harsh?</strong></p>
+          <p>No. The program is communication-based, not force-based. You're teaching your dog what behaviors work in your home through clear signals, timing, and rewards. No fear, pain, or intimidation. The goal is a dog who understands you and chooses to cooperate.</p>
+        </div>
+      </div>
+      <div class="col-50">
+        <div class="card">
+          <p><strong>Q: Is your training just about bribing my dog with treats?</strong></p>
+          <p>No. Reward-based training isn't bribery. Bribery is showing a reward before the behavior. Training is rewarding the behavior after it happens. You're teaching your dog what works, then gradually reducing treats as the behavior becomes habit. The program shows you exactly how to do this.</p>
+        </div>
+        <div class="card">
+          <p><strong>Q: Are the classes live or pre-recorded?</strong></p>
+          <p>The 196 lessons are pre-recorded step-by-step videos you can watch anytime. You go at your own pace. The live elements come through your Elite Dog Owners Club trial, where you can book one-on-one trainer calls and join live vet Q&A sessions.</p>
+        </div>
+      </div>
+    </div>
+
+    <h3>GROUP 3: ACCESS & LOGISTICS</h3>
+    <div class="row">
+      <div class="col-50">
+        <div class="card">
+          <p><strong>Q: I live outside the US. Can I still use your program?</strong></p>
+          <p>Yes. The program is online and accessible worldwide. The training principles work regardless of location. The Elite Dog Owners Club includes international members.</p>
+        </div>
+        <div class="card">
+          <p><strong>Q: How is the Smart Dog Accelerator Program structured?</strong></p>
+          <p>196 lessons organized into 8 modules. Each lesson is a short 10–15 minute video with a checklist. You follow a day-by-day roadmap based on your dog's Breed+Age+Personality Blueprint. Log in, watch today's lesson, follow the steps, and you're done.</p>
+        </div>
+      </div>
+      <div class="col-50">
+        <div class="card">
+          <p><strong>Q: How long do I have access to this program?</strong></p>
+          <p>Keep access to all 196 lessons.</p>
+        </div>
+        <div class="card">
+          <p><strong>Q: I'm older and not a trainer. Will I really have the energy for this?</strong></p>
+          <p>Yes. The system was built for 45+ owners. Short 10–15 minute sessions. Safe handling strategies. Clear checklists. Realistic timelines. Your job is not to power through long drills. It's to calmly follow today's small step.</p>
+        </div>
+      </div>
+    </div>
+
+    <h3>GROUP 4: MONEY, GUARANTEES & SUBSCRIPTIONS</h3>
+    <div class="row">
+      <div class="col-50">
+        <div class="card">
+          <p><strong>Q: What if I don't like the program or it doesn't work for my dog?</strong></p>
+          <p>You're protected by a 120-day money-back guarantee. Try the Smart Dog Accelerator Program on your real dog in your real home for up to 120 days. If you're not happy or don't see progress, contact support and request a full refund. Your entire course payment is refunded.</p>
+        </div>
+        <div class="card">
+          <p><strong>Q: I'm on a fixed income. What if this doesn't work and I've wasted money?</strong></p>
+          <p>Your access starts at $67 for the course, backed by a 120-day money-back guarantee. Your purchase also automatically includes a 30-day free trial of the Elite Dog Owners Club, which becomes $67/month after the trial unless you cancel. You can test the extra support and cancel before paying monthly if it's not a fit. You're not trapped in a bad decision.</p>
+        </div>
+      </div>
+      <div class="col-50">
+        <div class="card">
+          <p><strong>Q: Why should I pay when there's so much free training online?</strong></p>
+          <p>Free information takes hours to sort through and leaves you guessing which advice to follow. You get one complete system tailored to your dog's breed, age, and personality. 196 lessons in order. Access to trainers and a vet. A 120-day guarantee. The structured roadmap and support mean you actually get results instead of staying stuck.</p>
+        </div>
+        <div class="card">
+          <p><strong>Q: How does the Elite Dog Owners Club billing work after the trial?</strong></p>
+          <p>Your course purchase includes a 30-day free trial of the Elite Dog Owners Club at no additional cost. After 30 days, membership continues at $67/month unless you cancel. Your rate is locked at $67/month (discounted from the usual $77) as long as you remain a member. You can cancel anytime using the instructions inside your member area.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="section-scarcity">
+  <div class="section-inner centered">
+    <h2>Why joining now matters for support and pricing…</h2>
+    <div class="urgency-badge">⚠️ LIMITED ENROLLMENT WINDOW</div>
+    <div class="image-placeholder">Countdown Timer</div>
+    <div class="card">
+      <h3>CAPACITY / SUPPORT-BASED URGENCY</h3>
+      <p>Because the Smart Dog Accelerator Program includes one-on-one guidance during your Elite Dog Owners Club trial, we can only support a limited number of new members at once.</p>
+      <p>Trainer call slots and vet Q&A bandwidth mean we periodically limit or close new enrollments.</p>
+      <p>If you're seeing this page, enrollment is currently open. We can't guarantee how long this window will last.</p>
+
+      <h3>PRICING PROTECTION</h3>
+      <p>Your $67 Elite Dog Owners Club rate is discounted from the usual $77/month and is locked in as long as you remain a member.</p>
+      <p>The one-time $67 course price and discounted membership may increase in the future.</p>
+
+      <h3>BONUS AVAILABILITY</h3>
+      <p>The 30-day Elite Dog Owners Club trial is included with your course today.</p>
+      <p>Future buyers may not receive the same trial offer or discounted membership rate.</p>
+    </div>
+  </div>
+</section>
+
+<section class="section-final-cta">
+  <div class="section-inner centered">
+    <h2>Ready to turn chaos into calm, starting this week?</h2>
+    <ul style="display:inline-block; text-align:left;">
+      <li>Calm, reliably housebroken dog you can trust around guests and grandkids.</li>
+      <li>10–15 minute daily lessons tailored to your dog's breed, age, and personality.</li>
+      <li>One clear, step-by-step Smart Dog Accelerator Program instead of conflicting advice.</li>
+      <li>One-time $67 for the Smart Dog Accelerator Program (Dog Lovers Training Course), plus a 30-day free Elite Dog Owners Club trial.</li>
+      <li>Protected by a 120-day money-back guarantee, with "Keep access to all 196 lessons."</li>
+    </ul>
+    <BR>
+    <div class="cta-button">START THE SMART DOG ACCELERATOR PROGRAM FOR $67</div>
+    <p>Try it on your real dog in your real home for up to 120 days. If it doesn't help, you get a full refund.</p>
+  </div>
+</section>
+
+</body>
+</html>
